@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "39418500826",
+    "project_id": "fir-62c8d",
+    "storage_bucket": "fir-62c8d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:39418500826:android:0e6d7ee839c9ae661577e3",
+        "android_client_info": {
+          "package_name": "com.example.trading_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "39418500826-pb2knsdjevkr0up4p5reaqr7mp5j2cbj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAorurfbneoEEU7_pnSYw6L3-mkfdebOZI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "39418500826-pb2knsdjevkr0up4p5reaqr7mp5j2cbj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
