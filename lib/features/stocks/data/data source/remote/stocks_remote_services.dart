@@ -1,6 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:trading_app/core/utils/data_state.dart';
 import 'package:trading_app/core/utils/endpoints.dart';
+
 import 'package:trading_app/features/stocks/data/model/stock_model.dart';
 
 abstract class StocksService {
@@ -14,17 +15,17 @@ class StocksServiceImpl implements StocksService {
 
   @override
   Future<DataState<List<StockModel>>> getStocks() async {
-    print(">>>>>>>>>>>>>start fetching");
+   
     try {
       QuerySnapshot querySnapshot =
-          await _firestore.collection("stocks").get();
-            print(">>>>>>>>>>>>>completed fetching");
+          await _firestore.collection(Endpoints.stocksCollection).get();
+          
 
       return DataSuccess(querySnapshot.docs
           .map((doc) => StockModel.fromJson(doc.data() as Map<String, dynamic>))
           .toList());
     } catch (e) {
-         print(">>>>>>>>>>>>>error $e>>>>>>>>>>>>>>>>..");
+       
       throw DataFailed(e.toString());
     }
   }

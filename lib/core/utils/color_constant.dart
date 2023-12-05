@@ -8,7 +8,7 @@ class ColorConstant{
   static const Color yellow = Colors.yellow;
     static const Color blue = Colors.blue;
     static const Color grey = Colors.grey;
-    static  Color cardBgColor=Colors.grey.withOpacity(.2);
+   
 
   static const Color whiteColor = Colors.white;
   static const Color blackColor = Colors.black;
